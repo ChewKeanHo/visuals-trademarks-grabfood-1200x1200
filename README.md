@@ -1,247 +1,243 @@
-# Grab's GrabFood (GrabFood) Trademarks Logo 1200x1200 | (Holloway) Chew, Kean Ho's Visuals
+# GrabFood's Trademark Logo 1200x1200 | (Holloway) Chew, Kean Ho's Creative Visuals
 
-[![logo](/Pictures/banner_1200x1200.svg)](#)
+[![logo](/share/icons/chewkeanho/trademarks/grabfood_1200x1200.svg)](#)
 
-The GrabFood Trademarks Logo. They published a set of clear trademark guideline
-but supplied an incompatible material files for it (that requires very expensive
-payment subscription in order to properly synthesize them). The preferred
+The GrabFood's Trademark Logo. They published clear trademark guideline and
+supplied the required but incompatible material files for it. The preferred
 version is `.svg` which has non-destructive scale up & down properties and can
 be converted into any rasterized images (e.g. `jpeg`, `webp`, `avif`, etc). To
 comply with our standards, a re-draw is required.
 
-This project re-draws GrabFood Trademarks Logo specifically for 1200x1200 size.
+This project re-draws GrabFood's Trademark Logo specifically for 1200x1200 size.
 
 
 
 
-## Artificial Intelligence (A.I) Decrees
+## Verifying Content Integrity
 
-[![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
+[![banner](/.internals/trademarks/banner_1200x100.svg)](#)
 
-This project deploys the use of one or more generative artificial intelligence
-such as but not limited to large language model (LLM) for the following tasks:
+To secure the content from unauthorized modification by anyone down to bit-level
+(`0|1`), they are cryptographically signed using one or more cryptography tools
+such as but not limited to:
 
+* [GnuPG](https://gnupg.org); AND/OR
+* [OpenSSL](https://www.openssl.org/).
 
-
-### Data Sourcing
-
-> [!Note]
->
-> * Performing enhanced web searches due to polluted search engine indexes.
-> * Performing completely generated media such as but not limited to images,
->   videos, and audios.
-
-* Used for data and reading material searching as the search engine across the
-  Internet had collapsed due to A.I publication slops.
-* Used for grammar and language correction detection on the human-made written
-  script.
+The public key and the associated certificate are attached. Only the main owner
+keeps and maintains the private keys. To verify the content's integrity:
 
 
 
-### Data Processing & Analytics
+### GnuPG
 
-> [!Note]
->
-> * Performing development via multi-steps queries (also known as
->   *vibe coding* or *agentic AI processing*).
-> * Performing data analytics via multi-steps queries (also known as
->   *vibe coding* or *AI vibing*).
-> * Performing dedicated and task specific work where conventional technologies
->   could not achieve such as but not limited to upscaling an image verbatim.
+1. Install [GnuPG](https://gnupg.org) software if not present.
+2. Download the target file and its detached signature file (the `.asc` file
+   with the same filename).
+3. Download the public key file (`.gpg`).
+4. Place them next to each other in the directory.
+5. Open a terminal and execute the following command:
 
-No deployment.
-
-
-
-### Data Testing
-
-> [!Note]
->
-> * Performing end-user use case simulated testings.
-
-No deployment.
+```
+$ gpg --no-default-keyring --keyring /path/to/public.gpg --verify /path/to/file.asc
+```
 
 
 
-### Data Visualization
+### OpenSSL
 
-> [!Note]
->
-> * Performing completely generated data visualization via multi-step queries
->   (also known as *vibe coding*).
+1. Install [OpenSSL](https://www.openssl.org) software if not present.
+2. Download the target file and its detached signature file (the `.sig`/`.sign`
+   file with the same filename).
+3. Download the public certificate file (`.pem`) containing the public key
+   within.
+4. Place them next to each other in the directory.
+5. Open a terminal and execute the following command:
 
-No deployment.
+```
+$ openssl dgst -verify /path/to/pubkey.pem -signature /path/to/file.sig /path/to/file
+```
 
 
 
-### Data Archiving & Deletion
 
-> [!Note]
->
-> * Performing data clean-up via multi-step queries (also known as
->   *vibe coding*).
+## Artificial Intelligence (A.I.) Decrees
 
-No deployment.
+[![banner](/.internals/trademarks/banner_1200x100.svg)](#)
+
+Please refer to [AI_DECREES.md](AI_DECREES.md) for the project's policy on the
+use of Artificial Intelligence.
+
+
+
+
+## Trademark Registry
+
+[![banner](/.internals/trademarks/banner_1200x100.svg)](#)
+
+Please refer to [TRADEMARKS.txt](TRADEMARKS.txt) for the registered trademark's
+information.
+
+
+
+
+## References
+
+[![banner](/.internals/trademarks/banner_1200x100.svg)](#)
+
+Please refer to [REFERENCES.md](REFERENCES.md) for the project's references.
 
 
 
 
 ## Maintainers' Notes
 
-[![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
+[![banner](/.internals/trademarks/banner_1200x100.svg)](#)
 
-**Please thoroughly read GrabFood's published trademark guidelines available at
-the following for avoiding any unwanted legal implications**:
-
-* https://merchant.grab.com/en-my/brand-centre/grabfood
-
-While not specified by GrabFood, please ensure the outputs are also web ready.
-Refer:
-
-* https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Define_app_icons
-* https://web.dev/articles/maskable-icon
-* https://developer.x.com/en/docs/x-for-websites/cards/overview/summary-card-with-large-image
-* https://developers.facebook.com/docs/sharing/webmasters/images/
-
-Please **ONLY USE** open source image editing software specifically:
-
-* **GIMP (https://gimp.org/)** - for their very amazing alternate format exports
-  (e.g. `avif`, `webp`, `jpg`, `ico`, and `png`).
-* **Inkscape (https://inkscape.org/)** - for vector graphics maintenances and
-  exporting SVG plain vector files.
-
-For directory organizations:
-
-* The principal canvas **MUST BE SAVED** in `inkscape SVG format` and retain all
-  legal attributes (license, copyright, etc). The files **MUST HAVE** `inkscape-`
-  prefixes to avoid confusion. They are saved inside
-  `/Pictures/trademarks/principal-canvas` directory.
-* The exported svg **MUST BE IN** `Plain SVG format` and retain all legal
-  attributes (license, copright, etc). The files **MUST NOT HAVE** `inkscape-`
-  prefixes. They are saved inside `/Pictures/trademarks` directory.
-* The main-course **MUST** always be `.svg` as end-user can use GIMP to convert
-  into other formats.
-* Therefore, additional non-text based images (e.g. `.ico`, `.jpg`, `.webp`, and
-  `.avif`) should be published in `Release` section as "Good to Have" convenient
-  side-dishes.
+1. Please refer to [CONTRIBUTING.md](CONTRIBUTING.md) for contributing &
+   maintenances guidelines.
+2. Since Grab published its trademark guidelines, you **MUST** go through the
+   following specifications to avoid any unwanted legal implications:
+   * https://merchant.grab.com/en-my/brand-centre/grabfood
+   * Standard Global Trademark Laws
+   * Local Trademark Laws
+3. For repository trademarks' ownership, this repo uses the `TRADEMARKS.txt` for
+   tracking the trademarks' owners.
+     1. The file has its internal guides as comments. Please comply accordingly.
+     2. As trademarks are renewable across time, please check with the owners
+        and update this file at least annually.
+4. While not specified by Grab; please ensures the outputs are web-ready. Refer:
+   * https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Define_app_icons
+   * https://web.dev/articles/maskable-icon
+   * https://developer.x.com/en/docs/x-for-websites/cards/overview/summary-card-with-large-image
+   * https://developers.facebook.com/docs/sharing/webmasters/images/
+5. For directory organizations:
+   * The principal canvas **MUST BE SAVED** in `inkscape SVG format` and retain
+     all legal attributes (license, copyright, etc). The files **MUST HAVE**
+     `inkscape-` prefixes to avoid confusion. They are saved inside
+     `/share/icons/[PROJECT]/principal-canvas` directory.
+   * The exported svg **MUST BE IN** `Plain SVG format` and retain all legal
+     attributes (license, copright, etc). The files **MUST NOT HAVE**
+     `inkscape-` prefixes. They are saved inside `/share/icons/[PROJECT]/`
+     directory.
+   * The main-course **MUST** always be `.svg` as end-user can use GIMP to
+     convert into other formats.
+   * Therefore, additional non-text based images (e.g. `.ico`, `.jpg`, `.webp`,
+     and `.avif`) should be published in `Release` section as "Good to Have"
+     convenient side-dishes.
 
 
 
 
 ## License
 
-[![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
+[![banner](/.internals/trademarks/banner_1200x100.svg)](#)
 
-* [Agreed GIMP License](.internals/terms-of-services/GimpORG_License.pdf)
+* [Agreed GIMP License](.internals/terms-of-services/GimpORG-License.pdf)
 * [Agreed GIMP Privacy Policy](.internals/privacy-policy/GimpORG-Privacy-Policy.pdf)
-* [Agreed Inkscape License](.internals/terms-of-services/Inkscape_License.pdf)
+* [Agreed Inkscape License](.internals/terms-of-services/Inkscape-License.pdf)
 * [Agreed Inkscape Privacy Policy](.internals/privacy-policy/Inkscape-Privacy-Policy.pdf)
 
-This entire project is licensed under
+This entire repository is licensed under
 [Creative Commons Attribution-NoDerivatives 4.0 International License](LICENSE.txt).
+To ensure better understanding of this license, the following sub-sections will
+briefly describe how to deploy the content.
 
-Under this license, you are allowed to use the image for any means AS LONG AS
-YOU **MUST** attribute back to the arist(s) as follows:
+For registered non-profit organizations (NGO), you are considered a
+`Commercial Entity` the same as any for-profit organization by default. However,
+you will be eligible for the NGO disbursement grant and receive exception
+privileges from the creator(s).
+
+> [!CAUTION]
+>
+> While the images are licensed under a Creative Commons (CC) license, **YOU ARE
+> STILL OBLIGATED TO COMPLY WITH GRABFOOD'S TRADEMARK REQUIREMENTS
+> (refer: https://merchant.grab.com/en-my/brand-centre/grabfood)**.
+>
+> In any case, use the material files as provided. **DO NOT MODIFY THEM UNDER
+> ANY CIRCUMSTANCES**.
+
+
+
+### Attribution
+
+Unless otherwise specified in writing, you **MUST** attribute back to the
+creator(s) as follows:
 
 ```
---------------------------------------------------------------------------------
-Title: Grab's GrabFood (GrabFood) Trademarks Logo 1200x1200
-Creators: (Holloway) Chew, Kean Ho
+Title: GrabFood's Trademark Logo 1200x1200
+Creators: Grab
+Packaged-By: (Holloway) Chew, Kean Ho
 Contact: hello@chewkeanho.com
 SKU: chewkeanho-visuals-trademarks-grabfood-1200x1200
 UUID: 9E9C1E5F-95BC-4D90-BE81-2F7C767E39E6
-License: Creative Commons Attribution-NoDerivatives 4.0 International License
-Made On: 2026-02-03
-Made From: Malaysia, South East Asia
-Procure: https://github.com/chewkeanho/visuals-trademarks-grabfood-1200x1200
---------------------------------------------------------------------------------
+License: Creative Commons Attribution-NoDerivatives 4.0 International License (https://creativecommons.org/licenses/by-nd/4.0)
+Repository Made On: 2026-02-03
+Repository Made From: Malaysia, South East Asia
+Procure: https://github.com/ChewKeanHo/visuals-trademarks-grabfood-1200x1200
 ```
 
-For registered non-profit organizations (NGO), you're considered as a
-`Commercial Entity` similar to for-profit organizations by default but with
-the NGO disbursement grant and exception from the artist. Please process them
-as such.
-
-> [!Caution]
->
-> While the images are licensed under CC license, **YOU ARE STILL OBLIGATED TO
-> COMPLY WITH GRAB'S GRABFOOD TRADEMARK REQUIREMENTS
-> (Read: https://merchant.grab.com/en-my/brand-centre/grabfood)**.
->
-> In any case, just use as it is. **DO NOT MODIFY IN ANYWAY**.
 
 
-
-### Internal Screening - Personal
+### Ownership - Personal
 
 > [!NOTE]
 >
-> This targets customers wanting to use the image just for internal screening
-> and admirations without broadcasting to any other 3rd-party and without
+> This targets any customer wanting to own a copy of the content and then only
+> he/she is using it without sharing with any 3rd-party entity; AND **WITHOUT**
+> any monetary intention such as but not limited to:
+>
+> * Saving a local copy and then viewing via his/her own mobile device(s); OR
+> * Saving a local copy and then viewing via his/her own personal computer; OR
+> * Saving a local copy for artificial intelligence data training purposes.
+
+You are **ALLOWED** provided that you **STRICTLY COMPLY** with the license
+attribution.
+
+
+
+### Ownership - Commercial
+
+> [!NOTE]
+>
+> This targets any customer wanting to own a copy of the content and then only
+> he/she is using it without sharing with any 3rd-party entity; AND **WITH** any
 > monetary intention such as but not limited to:
 >
-> * Screening via handphone; OR
-> * Screening via computer; OR
-> * Screening via digital photo frame in bedroom; OR
-> * Print and place via physical frame in bedroom.
+> * Saving a local copy for enhancing his/her company's procurement list; OR
+> * Saving a local copy for commercial artificial intelligence data training
+>   purposes.
 
-You're **ALLOWED as long as you comply to the attribution above**.
-
-
-
-### Internal Screening - Commerical
-
-> [!NOTE]
->
-> This targets customers wanting to use the image just for internal screening
-> and admirations without broadcasting to any other 3rd-party and with
-> monetary intention such as but not limited to:
->
-> * Every examples from `Internal Screening - Personal`; AND
-> * Sampling images for enhancing company's procurement list.
-
-You're **ALLOWED as long as you comply to the attribution above**.
+You are **ALLOWED** provided that you **STRICTLY COMPLY** with the license
+attribution.
 
 
 
-### Broadcast Redistribution - Personal
+### Reference - Personal & Commercial
 
 > [!NOTE]
 >
-> This targets customers wanting to share the image via broadcasting without
-> monetary intention to multiple receiving 3rd-parties in both public
-> or private spaces disregarding their respective license compliances such as
-> but not limited to:
+> This targets any customer wanting to refer or to provide a guide for sourcing
+> the original content for any 3rd-party entity **without directly displaying
+> any portion of the original content**; **WITHOUT** any monetary intention such
+> as but not limited to:
 >
-> * Every examples from `Internal Screening - Personal`; AND
-> * Private gallery exhibitions; OR
-> * Private free entry open space like living room with background gallery
->   display.
+> * Academic research and paper writing; OR
+> * New content creation linking to the original content **WITHOUT displaying
+>   any of the original content** for his/her own streaming platform; OR
+> * Content production and collection linking to original content **WITHOUT
+>   displaying any of the original content**; OR
+> * Web portfolio project linking to the original content **WITHOUT displaying
+>   any of the original content**; OR
+> * Event materials linking the original content **WITHOUT displaying any of the
+>   original content**; OR
+> * Meeting materials linking the original content **WITHOUT displaying any of
+>   the original content**; OR
+> * Advertisement contents linking the original content **WITHOUT displaying any
+>   of the original content**.
 
-You're **ALLOWED as long as you comply to the attribution above**.
-
-
-
-### Broadcast Redistribution - Commercial
-
-> [!NOTE]
->
-> This targets customers wanting to screen and share the image via broadcasting
-> with monetary intention to multiple 3rd-parties in both public or private
-> spaces disregarding their respective license compliances such as but not
-> limited to:
->
-> * Every examples from `Internal Screening - Personal`; AND
-> * Every examples from `Internal Screening - Commercial`; AND
-> * Every examples from `Broadcast Redistribution - Personal`; AND
-> * Company's public events; OR
-> * Company's private events; OR
-> * Company's public exhibition; OR
-> * Company's entry payable private exhibition; OR
-> * YouTube public livestreaming; OR
-> * Company's marketing roadshow.
-
-You're **ALLOWED as long as you comply to the attribution above**.
+You are **ALLOWED** provided that you **STRICTLY COMPLY** with the license
+attribution.
 
 
 
@@ -249,16 +245,25 @@ You're **ALLOWED as long as you comply to the attribution above**.
 
 > [!NOTE]
 >
-> This targets customers wanting to use the image for direct integration into
-> their creation as it is without any remixes or modifications and without any
-> monetary intention from the project such as but not limited to:
+> This targets any customer wanting to directly **display portions and NOT ALL**
+> of the original content **as it is OR without any composing remixes or
+> modifications retaining the original intent, art direction and messages** into
+> his/her content creation; **WITHOUT** any monetary intention such as but not
+> limited to:
 >
-> * YouTube video creation **WITHOUT** any profits including advertisement
->   commission; OR
-> * Personal video production and collection; OR
-> * Personal web portfolio project.
+> * New content creation with displaying portion(s) of the original content for
+>   his/her own streaming platform **without any monetary gain**; OR
+> * Content production and collection with displaying portion(s) of the original
+>   content **without any monetary gain**; OR
+> * Web portfolio project with displaying portion(s) of the original content
+>   **without any monetary gain**; OR
+> * Event materials with displaying portion(s) of the original content
+>   **without any monetary gain**; OR
+> * Meeting materials with displaying portion(s) of the original content
+>   **without any monetary gain**.
 
-You're **ALLOWED as long as you comply to the attribution above**.
+You are **ALLOWED** provided that you **STRICTLY COMPLY** with the license
+attribution.
 
 
 
@@ -266,70 +271,23 @@ You're **ALLOWED as long as you comply to the attribution above**.
 
 > [!NOTE]
 >
-> This targets customers wanting to use the image for direct integration into
-> their creation as it is without any remixes or modifications and with any
-> monetary intention from the project; such as but not limited to:
->
-> * Every examples from `Integration - Personal`; AND
-> * YouTube video creation **WITH** any profits mechansim including but not
->   limited to advertisement commission; OR
-> * Company internal event's image material; OR
-> * Company internal meeting's image material; OR
-> * Company public advertisement media materials; OR
-> * Company public digital display signage media materials.
-
-You're **ALLOWED as long as you comply to the attribution above**.
-
-
-
-### Reference Remix - Personal
-
-> [!NOTE]
->
-> This targets customers wanting to reference the image's elements for new
-> creation without any monetary intention from the project such as but not
+> This targets any customer wanting to directly **display portions and NOT ALL**
+> of the original content **as it is OR without any composing remixes or
+> modifications retaining the original intent, art direction and messages** into
+> his/her content creation; **WITH** any monetary intention such as but not
 > limited to:
 >
-> * YouTube image video creation **WITHOUT** any profits including
->   advertisement commission; OR
-> * YouTube thumbnail images with edited images; OR
-> * Personal image video galleria; OR
-> * Personal web art expression portfolio project.
+> * New content creation with displaying portion(s) of the original content for
+>   his/her own streaming platform; OR
+> * Content production and collection with displaying portion(s) of the original
+>   content; OR
+> * Web portfolio project with displaying portion(s) of the original content; OR
+> * Event materials with displaying portion(s) of the original content; OR
+> * Meeting materials with displaying portion(s) of the original content; OR
+> * Advertisement materials with displaying portion(s) of the original content.
 
-You're **ONLY ALLOWED to reference WITHOUT ANY REMIXING** to the original
-image for your project without any monetary gains as long as you comply to
-the attribution above without any count limitations or any other restrictions.
-
-You are **NOT ALLOWED** to create any derivatives as the license itself
-**STORNGLY PROHIBITS** anyone to do as such from the original image.
-
-
-
-### Reference Remix - Commercial
-
-> [!NOTE]
->
-> This targets customers wanting to reference the image's elements for new
-> creation without any monetary intention from the project such as but not
-> limited to:
->
-> * Every examples from `Reference Remix - Personal`; AND
-> * YouTube image video creation **WITH** any profits including
->   advertisement commission; OR
-> * YouTube thumbnail images with edited images; OR
-> * Company internal event's media material with internal artists; OR
-> * Company internal meeting's media material with internal artists; OR
-> * Company public advertisement media materials with internal artists; OR
-> * Company public digital display signage media materials with internal
->   artists.
-
-You're **ONLY ALLOWED to reference WITHOUT ANY REMIXING** to the original image
-for your pursue including academic referencing as long as you comply to the
-attribution above without any count limitations or any other restrictions.
-
-You are **NOT ALLOWED** to create any derivatives (e.g. translating this iamge
-into another language) as the license itself **STORNGLY PROHIBITS** anyone to
-do as such.
+You are **ALLOWED** provided that you **STRICTLY COMPLY** with the license
+attribution.
 
 
 
@@ -337,21 +295,25 @@ do as such.
 
 > [!NOTE]
 >
-> This targets customers wanting to modify the original image's elements
-> compositions directly for producing a new image without any monetary
-> intention such as but not limited to:
+> This targets any customer wanting to own and then **modify the original
+> content extensively preserving or altering the original intent, art direction,
+> or message** for composing his/her new content creation; **WITHOUT** any
+> monetary intention such as but not limited to:
 >
-> * Every examples from `Reference Remix - Personal`; AND
-> * Personal image remixing practice using editing techniques such as but not
->   limited to digital processing, etc; OR
-> * YouTube video remix creation **WITHOUT** any profit including advertisement
->   commission; OR
-> * Personal image galleria; OR
-> * Personal web art expression portfolio project; OR
-> * Social media's mime images.
+> * New content creation with digitally modified and processed original content
+>   integration for his/her own streaming platform **WITHOUT** any profits
+>   including advertisement commission; OR
+> * Personal content production and collection with digitally modified and
+>   processed original content integration for his/her own streaming platform
+>   **WITHOUT** any profits including advertisement commission; OR
+> * Personal web portfolio project with digitally modified and processed
+>   original content integration for his/her own streaming platform **WITHOUT**
+>   any profits including advertisement commission; OR
+> * Social media meme content creation with digitally modified and processed
+>   original content integration for his/her own streaming platform **WITHOUT**
+>   any profits including advertisement commission.
 
-You are **NOT ALLOWED** to create any derivatives as the license itself
-**STORNGLY PROHIBITS** anyone to do as such.
+You are **NOT ALLOWED** due to the license restriction.
 
 
 
@@ -359,54 +321,70 @@ You are **NOT ALLOWED** to create any derivatives as the license itself
 
 > [!NOTE]
 >
-> This targets customers wanting to modify the original image's elements
-> compositions directly for producing a new image with any monetary intention
-> such as but not limited to:
+> This targets any customer wanting to own and then **modify the original
+> content extensively preserving or altering the original intent, art direction,
+> or message** for composing his/her new content creation; **WITH** any monetary
+> intention such as but not limited to:
 >
-> * Every examples from `Reference Remix - Personal`; AND
-> * Every examples from `Reference Remix - Commercial`; AND
-> * Every examples from `Composition Remix - Personal`; AND
-> * Post-processing image remixing or re-editing production; OR
-> * YouTube video creation remixing **WITH** any profit including
->   advertisement commission; OR
-> * Company internal event's media material with specific image elements; OR
-> * Company internal meeting's media materials with specific image elements; OR
-> * Company public advertisement media materials with specific image
->   elements; OR
-> * Company public digital display signage media materials with specific image
->   elements.
+> * New content creation with digitally modified and processed original content
+>   integration for his/her own streaming platform; OR
+> * Personal content production and collection with digitally modified and
+>   processed original content integration for his/her own streaming platform;
+>   OR
+> * Personal web portfolio project with digitally modified and processed
+>   original content integration for his/her own streaming platform; OR
+> * Social media meme content creation with digitally modified and processed
+>   original content integration for his/her own streaming platform.
 
-You are **NOT ALLOWED** to create any derivatives as the license itself
-**STORNGLY PROHIBITS** anyone to do as such.
+You are **NOT ALLOWED** due to the license restriction.
 
 
 
-### Resell Redistribution - Personal
+### Broadcast or Resell Redistribution - Personal
 
 > [!NOTE]
 >
-> This targets customers wanting to share and to redistribute the image and
-> its derrivatives without any monetary intention such as but not limited to:
+> This targets any customer wanting to share, to broadcast, to re-distribute,
+> to sell, or to re-sell the original, **modified, OR derived** content
+> **WITHOUT** any monetary intention such as but not limited to:
 >
-> * Sharing the image across social media **WITHOUT** any income including but
->   not limited to advertisement commissions; OR
-> * Share the image among friends via email/messaging attachment **WITHOUT**
->   any monetary transaction in any form involved.
+> * Sharing with family members; OR
+> * Streaming the content via any streaming platform with private viewer
+>   access; OR
+> * Displaying the content in his/her gallery with privately invited guests; OR
+> * Displaying the content in private, free entry open spaces like living room;
+>   OR
+> * Owning a copy of the original content and serving it as downloadable content
+>   on a website in a private network (e.g. self-hosted home network); OR
+> * Sharing the original content across social media or messaging applications
+>   like email or instant messenger.
 
-You are **ALLOWED as long as you comply to the attribution above**.
+You are **ALLOWED** provided that you **STRICTLY COMPLY** with the license
+attribution.
 
 
 
-### Resell Redistribution - Commercial
+### Broadcast or Resell Redistribution - Commercial
 
 > [!NOTE]
 >
-> This targets customers wanting to resell the image and its derrivatives
-> for any monetary intention such as but not limited to:
+> This targets any customer wanting to share, to broadcast, to re-distribute,
+> to sell, or to re-sell the original, **modified, OR derived** content
+> **WITH** any monetary intention such as but not limited to:
 >
-> * Every examples from `Resell Redistribution - Personal`; AND
-> * Sharing the image across company's social media; OR
-> * Selling the image to the public; OR
-> * Distribute the image into multiple profit-earning streaming platform.
+> * Streaming the content via any streaming platform with public or private
+>   viewer access; OR
+> * Displaying the content in any company's public events with free or payable
+>   guest invites; OR
+> * Displaying the content in any company's internal/private events with free or
+>   payable guest invites; OR
+> * Owning a copy of the original content and serving it as free OR payable
+>   downloadable content on his/her website in any network (Internet, Intranet,
+>   or private networks); OR
+> * Sharing the original content across social media or messaging applications
+>   like email or instant messenger; OR
+> * Distributing the original content via multiple profit-earning streaming
+>   platforms.
 
-You are **ALLOWED as long as you comply to the attribution above**.
+You are **ALLOWED** provided that you **STRICTLY COMPLY** with the license
+attribution.

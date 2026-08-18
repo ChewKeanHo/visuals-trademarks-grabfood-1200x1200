@@ -1,0 +1,47 @@
+cff-version: "1.2.0"
+type: "dataset"
+date-released: "2026-02-03"
+title: "GrabFood's Trademark Logo 1200x1200"
+version: "1.0.0"
+license: "cc-by-nd-4.0"
+repository: "https://github.com/ChewKeanHo/visuals-trademarks-grabfood-1200x1200"
+repository-code: "https://github.com/ChewKeanHo/visuals-trademarks-grabfood-1200x1200"
+repository-artifact: "https://github.com/ChewKeanHo/visuals-trademarks-grabfood-1200x1200"
+url: "https://github.com/ChewKeanHo/visuals-trademarks-grabfood-1200x1200"
+contact:
+  - affiliation: "(Holloway) Chew, Kean Ho"
+    given-names: "Kean Ho"
+    family-names: "Chew"
+    email: "visuals@chewkeanho.com"
+    website: "https://visuals.chewkeanho.com"
+abstract: |-
+  The GrabFood's Trademark Logo. They published clear trademark guideline and
+  supplied the required but incompatible material files for it. The preferred
+  version is `.svg` which has non-destructive scale up & down properties and can
+  be converted into any rasterized images (e.g. `jpeg`, `webp`, `avif`, etc). To
+  comply with our standards, a re-draw is required.
+
+  This project re-draws GrabFood's Trademark Logo specifically for 1200x1200
+  size.
+message: |-
+  Please cite and reference this repository accordingly.
+authors:
+  - given-names: "Kean Ho"
+    family-names: "Chew"
+    email: "visuals@chewkeanho.com"
+    orcid: "https://orcid.org/0000-0003-4202-4863"
+identifiers:
+  - type: other
+    value: "chewkeanho-visuals-trademarks-grabfood-1200x1200"
+    description: "Product SKU Identifier"
+  - type: other
+    value: "9E9C1E5F-95BC-4D90-BE81-2F7C767E39E6"
+    description: "Product UUID Identifier"
+keywords:
+  - "grabfood"
+  - "logo-1200x1200"
+  - "trademarks"
+  - "logos"
+  - "graphics design"
+  - "visuals"
+  - "creative visuals"

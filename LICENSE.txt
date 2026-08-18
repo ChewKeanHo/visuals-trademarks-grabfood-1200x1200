@@ -1,3 +1,12 @@
+Copyright 2026 The GrabFood's Trademarks Logo 1200x1200 Project Team (https://github.com/ChewKeanHo/visuals-trademarks-grabfood-1200x1200)
+
+The above unified aliases have one or more actual legal entities listed outside
+of this document: (1) 'CREATORS.txt' or 'AUTHORS.txt'; and
+(2) 'CONTRIBUTORS.txt'. They are located usually placed next to this document
+in their respective project repository. Please refer to them for compiling the
+complete list accordingly.
+
+
 Attribution-NoDerivatives 4.0 International
 
 =======================================================================
